@@ -12,30 +12,46 @@
         height: 100%;
       }
       body {
-        background-color: #000;
+        display: flex;
         margin: 0;
         width: 100%;
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
       ul {
+        flex: 1;
+        display: flex;
         margin: 0;
         padding: 0;
         list-style: none;
         text-align: center;
+        flex-direction: column;
+      }
+      li {
+        flex: 1;
+        display: flex;
+        align-items: stretch;
+      }
+      li:nth-child(odd) {
+        background-color: #000;
+      }
+      li:nth-child(even) {
+        background-color: #fff;
       }
       a {
         font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
         font-size: 32px;
         line-height: 200%;
-        color: #fff;
         text-decoration: none;
-        display: block;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      a:hover {
-          color: #ccc;
+      li:nth-child(odd) a {
+        color: #fff;
+      }
+      li:nth-child(even) a {
+        color: #000;
       }
     </style>
   </head>
