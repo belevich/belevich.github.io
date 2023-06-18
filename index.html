@@ -32,14 +32,14 @@
         align-items: stretch;
       }
       li:nth-child(odd) {
-        background-color: #000;
+        background-color: black;
       }
       li:nth-child(even) {
-        background-color: #fff;
+        background-color: white;
       }
       a {
-        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-        font-size: 32px;
+        font-family: "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", "Liberation Mono", "DejaVu Sans Mono", "Courier New", Courier, monospace;
+        font-size: 6vh;
         line-height: 200%;
         text-decoration: none;
         flex: 1;
@@ -47,11 +47,14 @@
         align-items: center;
         justify-content: center;
       }
+      a:hover {
+        text-decoration: underline;
+      }
       li:nth-child(odd) a {
-        color: #fff;
+        color: white;
       }
       li:nth-child(even) a {
-        color: #000;
+        color: black;
       }
     </style>
   </head>
